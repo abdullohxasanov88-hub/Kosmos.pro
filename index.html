@@ -1,0 +1,220 @@
+<!DOCTYPE html>
+<html lang="uz">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Koinot | Abdulloh.X</title>
+
+    <link rel="stylesheet" href="style.css">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;500;700;900&display=swap" rel="stylesheet">
+</head>
+
+<body>
+
+<!-- ⭐ Yulduzlar -->
+<div id="stars"></div>
+
+<!-- ☄️ Meteorlar -->
+<div id="meteors"></div>
+
+<!-- 🕳️ Qora tuynuk -->
+<div class="black-hole">
+    <div class="ring"></div>
+    <div class="core"></div>
+</div>
+
+<!-- ===== NAVBAR ===== -->
+
+<nav>
+
+<div class="logo">
+    Abdulloh.X
+</div>
+
+<ul>
+
+<li><a href="#home">Bosh sahifa</a></li>
+
+<li><a href="#planets">Planetalar</a></li>
+
+<li><a href="#galaxy">Galaktika</a></li>
+
+<li><a href="#contact">Aloqa</a></li>
+
+</ul>
+
+</nav>
+
+<!-- ===== HERO ===== -->
+
+<header id="home" class="hero">
+
+<h1>
+🌌 KOINOT
+</h1>
+
+<p>
+
+Koinotning sirli olamini kashf eting.
+Planetalar, yulduzlar, qora tuynuklar
+va galaktikalar haqida bilib oling.
+
+</p>
+
+<a href="#planets" class="btn">
+Boshlash 🚀
+</a>
+
+</header>
+
+<!-- ===== PLANETS ===== -->
+
+<main id="planets"><!-- 🌍 Yer -->
+<section class="planet-card" onclick="openPlanet('earth')">
+    <div class="planet earth"></div>
+
+    <div class="info">
+        <h2>🌍 Yer</h2>
+        <p>
+            Yer — Quyosh tizimidagi hayot mavjud bo'lgan yagona sayyora.
+            Uning yuzasining katta qismini suv qoplaydi.
+        </p>
+
+        <button class="planet-btn">
+            Batafsil →
+        </button>
+    </div>
+</section>
+
+<!-- 🔴 Mars -->
+<section class="planet-card" onclick="openPlanet('mars')">
+    <div class="planet mars"></div>
+
+    <div class="info">
+        <h2>🔴 Mars</h2>
+        <p>
+            Mars "Qizil sayyora" nomi bilan mashhur.
+            Olimlar kelajakda insonlarni Marsga yuborishni rejalashtirmoqda.
+        </p>
+
+        <button class="planet-btn">
+            Batafsil →
+        </button>
+    </div>
+</section>
+
+<!-- 🪐 Saturn -->
+<section class="planet-card" onclick="openPlanet('saturn')">
+    <div class="planet saturn">
+        <div class="ring"></div>
+    </div>
+
+    <div class="info">
+        <h2>🪐 Saturn</h2>
+        <p>
+            Saturn o'zining ulkan halqalari bilan mashhur gaz giganti.
+        </p>
+
+        <button class="planet-btn">
+            Batafsil →
+        </button>
+    </div>
+</section>
+
+<!-- 🔵 Neptun -->
+<section class="planet-card" onclick="openPlanet('neptune')">
+    <div class="planet neptune"></div>
+
+    <div class="info">
+        <h2>🔵 Neptun</h2>
+        <p>
+            Neptun Quyosh tizimidagi eng uzoq sayyoralardan biri bo'lib,
+            kuchli shamollari bilan mashhur.
+        </p>
+
+        <button class="planet-btn">
+            Batafsil →
+        </button>
+    </div>
+</section>
+
+<!-- 🟠 Yupiter -->
+<section class="planet-card" onclick="openPlanet('jupiter')">
+    <div class="planet jupiter"></div>
+
+    <div class="info">
+        <h2>🟠 Yupiter</h2>
+        <p>
+            Yupiter Quyosh tizimidagi eng katta sayyora bo'lib,
+            unda ulkan bo'ronlar kuzatiladi.
+        </p>
+
+        <button class="planet-btn">
+            Batafsil →
+        </button>
+    </div>
+</section>
+
+<!-- ☀️ Quyosh -->
+<section class="</main>
+
+<!-- ===== GALAKTIKA ===== -->
+<section id="galaxy" class="section">
+    <h2>🌌 Galaktikalar</h2>
+    <p>
+        Koinot milliardlab galaktikalardan iborat. Biz yashayotgan
+        galaktika Somon Yo‘li deb ataladi.
+    </p>
+</section>
+
+<!-- ===== ALOQA ===== -->
+<section id="contact" class="section">
+    <h2>📩 Aloqa</h2>
+
+    <form class="contact-form">
+        <input type="text" placeholder="Ismingiz" required>
+
+        <input type="email" placeholder="Email" required>
+
+        <textarea placeholder="Xabaringiz..." rows="6"></textarea>
+
+        <button type="submit">
+            Yuborish 🚀
+        </button>
+    </form>
+</section>
+
+<!-- ===== POPUP ===== -->
+<div class="popup" id="popup">
+
+    <div class="popup-content">
+
+        <span class="close" onclick="closePlanet()">&times;</span>
+
+        <h2 id="popupTitle"></h2>
+
+        <img id="popupImage" src="" alt="Planet">
+
+        <p id="popupText"></p>
+
+    </div>
+
+</div>
+
+<!-- ===== FOOTER ===== -->
+<footer>
+<h2>Abdulloh.X</h2>
+
+<p>
+© 2026 Koinot. Barcha huquqlar himoyalangan.
+</p>
+
+</footer>
+
+<script src="script.js"></script>
+
+</body>
+</html>
